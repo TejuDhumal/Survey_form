@@ -13,9 +13,9 @@ app.use("/usersRouter/", usersRouter);
 
  
 
-app.get("/", (req,res) => {
-    res.send("get is working ok")
-});
+// app.get("/", (req,res) => {
+//     res.send("get is working ok")
+// });
 
 mongoose.connect(process.env.DB_CONNECTION_URL,() => {
     console.log("connect")
